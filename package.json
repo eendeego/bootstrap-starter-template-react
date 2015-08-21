@@ -1,0 +1,10 @@
+{
+  "name": "bootstrap-starter-template-react",
+  "version": "0.0.1",
+  "description": "Bootstrap starter template react.",
+  "scripts": {
+    "test": "exit 0"
+  },
+  "author": "Luis Reis <luis.m.reis@gmail.com>",
+  "license": "UNLICENSED"
+}
