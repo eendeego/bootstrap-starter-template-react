@@ -1,3 +1,3 @@
-require('./styles/application.css');
+require('./styles/application.scss');
 
 console.log('Hello world!');
