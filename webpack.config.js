@@ -1,4 +1,5 @@
 var path = require('path');
+var webpack = require('webpack');
 var Clean = require('clean-webpack-plugin');
 var HtmlWebpackPlugin = require('html-webpack-plugin')
 var ExtractTextPlugin = require('extract-text-webpack-plugin');
@@ -8,6 +9,8 @@ const distDir = 'dist';
 module.exports = {
   devtool: 'source-map',
   entry: [
+    'webpack-dev-server/client?http://localhost:' + (process.env.WDS_PORT || 3000),
+    'webpack/hot/only-dev-server',
     './app/index'
   ],
   module: {
@@ -21,6 +24,8 @@ module.exports = {
     hashDigestLength: 8
   },
   plugins: [
+    new webpack.HotModuleReplacementPlugin(),
+    new webpack.NoErrorsPlugin(),
     new Clean([distDir]),
     new HtmlWebpackPlugin({
       inject: true,
