@@ -8,6 +8,11 @@ module.exports = {
   entry: [
     './app/index'
   ],
+  module: {
+    loaders: [
+      { test: /\.css?$/, loader: 'style!css' }
+    ],
+  },
   output: {
     path: path.join(__dirname, distDir),
     filename: 'bundle.[hash].js'
