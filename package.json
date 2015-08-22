@@ -10,6 +10,7 @@
   "license": "UNLICENSED",
   "devDependencies": {
     "clean-webpack-plugin": "^0.1.3",
+    "html-webpack-plugin": "^1.6.1",
     "webpack": "^1.11.0"
   }
 }
