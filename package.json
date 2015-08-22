@@ -9,6 +9,7 @@
   "author": "Luis Reis <luis.m.reis@gmail.com>",
   "license": "UNLICENSED",
   "devDependencies": {
+    "clean-webpack-plugin": "^0.1.3",
     "webpack": "^1.11.0"
   }
 }
