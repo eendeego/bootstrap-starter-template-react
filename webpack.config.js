@@ -6,12 +6,13 @@ var ExtractTextPlugin = require('extract-text-webpack-plugin');
 const distDir = 'dist';
 
 module.exports = {
+  devtool: 'source-map',
   entry: [
     './app/index'
   ],
   module: {
     loaders: [
-      { test: /\.scss$/, loader: ExtractTextPlugin.extract('css!sass') }
+      { test: /\.scss$/, loader: ExtractTextPlugin.extract('css?sourceMap!sass?sourceMap') },
     ],
   },
   output: {
