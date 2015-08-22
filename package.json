@@ -3,8 +3,12 @@
   "version": "0.0.1",
   "description": "Bootstrap starter template react.",
   "scripts": {
-    "test": "exit 0"
+    "test": "exit 0",
+    "webpack": "webpack"
   },
   "author": "Luis Reis <luis.m.reis@gmail.com>",
-  "license": "UNLICENSED"
+  "license": "UNLICENSED",
+  "devDependencies": {
+    "webpack": "^1.11.0"
+  }
 }
