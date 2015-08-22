@@ -15,7 +15,8 @@ module.exports = {
   ],
   module: {
     loaders: [
-      { test: /\.scss$/, loader: ExtractTextPlugin.extract('css?sourceMap!sass?sourceMap') },
+      { test: /\.js$/, loaders: ['babel'], exclude: /node_modules/ },
+      { test: /\.scss$/, loader: ExtractTextPlugin.extract('css?sourceMap!sass?sourceMap') }
     ],
   },
   output: {
